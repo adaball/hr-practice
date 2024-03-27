@@ -15,7 +15,7 @@ public class IfElse {
 
     InputStream inputStream;
     try {
-      inputStream = Util.loadResourceAsStream("if-else.txt");
+      inputStream = Util.loadResourceAsStream("introduction/if-else.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }

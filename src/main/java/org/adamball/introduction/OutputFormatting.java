@@ -13,7 +13,7 @@ public class OutputFormatting {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("output-formatting.txt");
+      inputStream = Util.loadResourceAsStream("introduction/output-formatting.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }

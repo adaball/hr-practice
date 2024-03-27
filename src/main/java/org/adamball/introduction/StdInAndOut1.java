@@ -13,7 +13,7 @@ public class StdInAndOut1 {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("std-in-and-out-1.txt");
+      inputStream = Util.loadResourceAsStream("introduction/std-in-and-out-1.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }

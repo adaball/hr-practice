@@ -13,7 +13,7 @@ public class Loops2 {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("loops-2.txt");
+      inputStream = Util.loadResourceAsStream("introduction/loops-2.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }

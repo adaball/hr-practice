@@ -13,7 +13,7 @@ public class EndOfFile {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("end-of-file.txt");
+      inputStream = Util.loadResourceAsStream("introduction/end-of-file.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }

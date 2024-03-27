@@ -13,7 +13,7 @@ public class DataTypes {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("data-types.txt");
+      inputStream = Util.loadResourceAsStream("introduction/data-types.txt");
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }
