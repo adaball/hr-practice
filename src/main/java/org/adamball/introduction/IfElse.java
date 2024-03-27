@@ -7,6 +7,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import org.adamball.Util;
 
+/**
+ * Solution for: <a href="https://www.hackerrank.com/challenges/java-if-else/problem"> HR link</a>
+ */
 public class IfElse {
   public static void main(String[] args) {
 

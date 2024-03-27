@@ -5,6 +5,9 @@ import java.io.InputStream;
 import java.util.Scanner;
 import org.adamball.Util;
 
+/**
+ * Solution for: <a href="https://www.hackerrank.com/challenges/java-loops-i/problem">HR link</a>
+ */
 public class Loops1 {
   public static void main(String[] args) {
     InputStream inputStream;
