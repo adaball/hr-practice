@@ -2,6 +2,7 @@ package org.adamball.strings;
 
 import java.io.InputStream;
 import java.util.MissingResourceException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -19,11 +20,22 @@ public class StringTokens {
     }
 
     Scanner scanner = new Scanner(inputStream);
-    String s = scanner.nextLine();
-    scanner.close();
+    String s;
+    try {
+      s = scanner.nextLine();
+    } catch (NoSuchElementException e) {
+      s = null;
+    } finally {
+      scanner.close();
+    }
+
+    if (s == null || s.isEmpty() || s.isBlank()) {
+      System.out.println(0);
+      return;
+    }
 
     String inverseTokenRegex = "[^A-Za-z]+";
-    String[] tokens = s.split(inverseTokenRegex);
+    String[] tokens = s.trim().split(inverseTokenRegex);
 
     System.out.println(tokens.length);
     for (String token : tokens) {
