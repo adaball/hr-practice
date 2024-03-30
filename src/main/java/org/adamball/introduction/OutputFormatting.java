@@ -1,7 +1,7 @@
 package org.adamball.introduction;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -14,7 +14,7 @@ public class OutputFormatting {
 
     try {
       inputStream = Util.loadResourceAsStream("introduction/output-formatting.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

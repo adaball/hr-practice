@@ -1,7 +1,7 @@
 package org.adamball.strings;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -14,7 +14,7 @@ public class StringsIntro {
 
     try {
       inputStream = Util.loadResourceAsStream("strings/strings-intro.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

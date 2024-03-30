@@ -1,7 +1,7 @@
 package org.adamball.introduction;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -19,7 +19,7 @@ public class StaticInitBlock {
 
     try {
       inputStream = Util.loadResourceAsStream("introduction/static-init-block.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

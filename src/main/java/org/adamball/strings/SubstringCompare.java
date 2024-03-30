@@ -1,7 +1,7 @@
 package org.adamball.strings;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -14,7 +14,7 @@ public class SubstringCompare {
 
     try {
       inputStream = Util.loadResourceAsStream("strings/substring-compare.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

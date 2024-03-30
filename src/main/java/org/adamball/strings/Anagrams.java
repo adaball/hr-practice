@@ -1,7 +1,7 @@
 package org.adamball.strings;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -18,7 +18,7 @@ public class Anagrams {
 
     try {
       inputStream = Util.loadResourceAsStream("strings/anagrams.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

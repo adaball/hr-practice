@@ -1,15 +1,15 @@
 package org.adamball;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 
 public class Util {
-  public static InputStream loadResourceAsStream(String resourcePath) throws FileNotFoundException {
+  public static InputStream loadResourceAsStream(String resourcePath) throws MissingResourceException {
     ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
     InputStream resourceAsStream = contextClassLoader.getResourceAsStream(resourcePath);
 
     if (resourceAsStream == null) {
-      throw new FileNotFoundException(String.format("Could not find resource file: %s", resourcePath));
+      throw new MissingResourceException("Unable to load resource file", Util.class.getName(), resourcePath);
     }
 
     return resourceAsStream;

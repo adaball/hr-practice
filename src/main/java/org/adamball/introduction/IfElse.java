@@ -1,10 +1,10 @@
 package org.adamball.introduction;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.MissingResourceException;
 import org.adamball.Util;
 
 /**
@@ -16,7 +16,7 @@ public class IfElse {
     InputStream inputStream;
     try {
       inputStream = Util.loadResourceAsStream("introduction/if-else.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

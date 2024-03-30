@@ -1,7 +1,7 @@
 package org.adamball.introduction;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -14,7 +14,7 @@ public class Loops2 {
 
     try {
       inputStream = Util.loadResourceAsStream("introduction/loops-2.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

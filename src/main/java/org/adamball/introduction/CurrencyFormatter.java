@@ -1,9 +1,9 @@
 package org.adamball.introduction;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.text.NumberFormat;
 import java.util.Locale;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import org.adamball.Util;
 
@@ -16,7 +16,7 @@ public class CurrencyFormatter {
 
     try {
       inputStream = Util.loadResourceAsStream("introduction/currency-formatter.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 

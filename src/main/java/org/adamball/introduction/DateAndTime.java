@@ -1,10 +1,10 @@
 package org.adamball.introduction;
 
-import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
+import java.util.MissingResourceException;
 import java.util.Scanner;
 import java.util.TimeZone;
 import org.adamball.Util;
@@ -18,7 +18,7 @@ public class DateAndTime {
 
     try {
       inputStream = Util.loadResourceAsStream("introduction/date-and-time.txt");
-    } catch (FileNotFoundException e) {
+    } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }
 
