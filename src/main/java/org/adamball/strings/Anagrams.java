@@ -8,9 +8,9 @@ import org.adamball.Util;
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-anagrams/problem">HR link</a>
  * <br />
- * Note: HR submission interface for Java 8 doesn't allow for any additional imports save the Scanner so this is all
- * done in arrays.  I could use a higher version but I'm choosing not to because of HR's checking weirdness.
- * Probably making this hard on myself 🤷‍♀️
+ * Note: HR submission interface for Java 8 doesn't allow for any additional imports save the Scanner so this
+ * solution is done in arrays.  I could use a higher Java version but I'm choosing not to because of HR's checking
+ * weirdness between versions.  Probably making this hard on myself 🤷‍♀️
  */
 public class Anagrams {
   public static void main(String[] args) {
@@ -31,8 +31,7 @@ public class Anagrams {
   }
 
   /**
-   * Returns true if a and b are case-insensitive anagrams. nb: HR submission interface allows no additional imports
-   * save for the Scanner
+   * Returns true if a and b are case-insensitive anagrams.
    *
    * @param a first string for comparison
    * @param b second string for comparison
@@ -76,13 +75,14 @@ public class Anagrams {
   /**
    * Checks if a character frequency is found in an array of character frequencies.
    *
-   * @param freqToCheck         single char frequency, format [char's int code, char's frequency]
-   * @param freqsToCheckAgainst array of char frequencies
-   * @return whether or not the character frequency is found
+   * @param frequencyToCheck single char frequency, format [char's int code, char's frequency]
+   * @param frequencies      array of char frequencies
+   * @return whether or not the given frequency is found in the given array of frequencies (both present in code and
+   * in the frequency amount)
    */
-  private static boolean equalFrequency(int[] freqToCheck, int[][] freqsToCheckAgainst) {
-    for (int[] charFreq : freqsToCheckAgainst) {
-      if (charFreq[0] == freqToCheck[0] && charFreq[1] == freqToCheck[1]) {
+  private static boolean equalFrequency(int[] frequencyToCheck, int[][] frequencies) {
+    for (int[] frequency : frequencies) {
+      if (frequency[0] == frequencyToCheck[0] && frequency[1] == frequencyToCheck[1]) {
         return true;
       }
     }
@@ -91,10 +91,10 @@ public class Anagrams {
   }
 
   /**
-   * Generate character frequencies for the given String.
+   * Generate character frequencies for the given string.
    *
    * @param s string to analyze
-   * @return int[][] where each entry's format is [char's int code, char's frequency]
+   * @return int[][] where each entry's format is [char's int code, char's frequency in string]
    */
   private static int[][] getCharacterFrequency(String s) {
     char[] stringChars = new char[s.length()];
@@ -105,22 +105,22 @@ public class Anagrams {
     int charFrequenciesIdx = 0;
 
     // search charFrequencies for the given characters
-    for (char currChar : stringChars) {
+    for (char stringChar : stringChars) {
       boolean found = false;
       int charIdx;
       for (charIdx = 0; charIdx < charFrequencies.length; charIdx++) {
-        if (currChar == charFrequencies[charIdx][0]) {
+        if (stringChar == charFrequencies[charIdx][0]) {
           found = true;
           break;
         }
       }
 
-      // add or update count for given character
+      // add or increment count for given character
       if (found) {
         int currCount = charFrequencies[charIdx][1];
         charFrequencies[charIdx][1] = currCount + 1;
       } else {
-        charFrequencies[charFrequenciesIdx][0] = currChar;
+        charFrequencies[charFrequenciesIdx][0] = stringChar;
         charFrequencies[charFrequenciesIdx][1] = 1;
         charFrequenciesIdx++;
       }
