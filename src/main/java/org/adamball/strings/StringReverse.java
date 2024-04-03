@@ -21,6 +21,7 @@ public class StringReverse {
     Scanner scanner = new Scanner(inputStream);
 
     String s = scanner.next();
+    scanner.close();
     StringBuilder sb = new StringBuilder();
 
     String[] tokens = s.split("");

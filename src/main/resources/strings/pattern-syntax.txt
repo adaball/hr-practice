@@ -1,0 +1,7 @@
+6
+([a]+)(.+)
+[.]+
+[.]*
+[ ]*
+[AAAAAAAAAAAAAAAAAAAAAAAA]*
+[AZ[a-z](a-z)
