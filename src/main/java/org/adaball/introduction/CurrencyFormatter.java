@@ -25,7 +25,7 @@ public class CurrencyFormatter {
     scanner.close();
 
     NumberFormat usdFormat = NumberFormat.getCurrencyInstance(Locale.US);
-    NumberFormat inrFormat = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
+    NumberFormat inrFormat = NumberFormat.getCurrencyInstance(Locale.of("en", "IN"));
     NumberFormat cnyFormat = NumberFormat.getCurrencyInstance(Locale.CHINA);
     NumberFormat eurFormat = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
