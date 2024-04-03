@@ -35,7 +35,7 @@ public class Regex {
     // \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
     private static final Pattern IP_ADDRESS_PATTERN =
         Pattern.compile(
-            "^(?:(?:2[0-4][0-9]|25[0-5]|[0-1][0-9]{1,2}|[0-9]{1,2})\\.){3}(?:(?:2[0-4][0-9]|25[0-5]|[0-1][0-9]{1,2}|[0-9]{1,2}))$");
+            "^(?:(?:2[0-4][0-9]|25[0-5]|[0-1][0-9]{1,2}|[0-9]{1,2})\\.){3}(?:2[0-4][0-9]|25[0-5]|[0-1][0-9]{1,2}|[0-9]{1,2})$");
 
     private static boolean validIPAddress(String s) {
       return IP_ADDRESS_PATTERN.asPredicate().test(s);
