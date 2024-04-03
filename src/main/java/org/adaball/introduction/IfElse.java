@@ -1,11 +1,11 @@
-package org.adamball.introduction;
+package org.adaball.introduction;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.MissingResourceException;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-if-else/problem"> HR link</a>

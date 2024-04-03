@@ -1,4 +1,4 @@
-package org.adamball.strings;
+package org.adaball.strings;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.MissingResourceException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/pattern-syntax-checker/problem">HR link</a>

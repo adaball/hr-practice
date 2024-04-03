@@ -1,10 +1,10 @@
-package org.adamball.strings;
+package org.adaball.strings;
 
 import java.io.InputStream;
 import java.util.MissingResourceException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-string-tokens/problem">HR link</a>

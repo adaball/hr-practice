@@ -1,9 +1,9 @@
-package org.adamball.introduction;
+package org.adaball.introduction;
 
 import java.io.InputStream;
 import java.util.MissingResourceException;
 import java.util.Scanner;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-loops-i/problem">HR link</a>

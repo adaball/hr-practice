@@ -1,20 +1,20 @@
-package org.adamball.strings;
+package org.adaball.strings;
 
 import java.io.InputStream;
 import java.util.MissingResourceException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-regex/problem">HR link</a>
  */
-public class Regex {
+public class Regex1 {
   public static void main(String[] args) {
     InputStream inputStream;
 
     try {
-      inputStream = Util.loadResourceAsStream("strings/regex.txt");
+      inputStream = Util.loadResourceAsStream("strings/regex-1.txt");
     } catch (MissingResourceException e) {
       throw new RuntimeException(e);
     }

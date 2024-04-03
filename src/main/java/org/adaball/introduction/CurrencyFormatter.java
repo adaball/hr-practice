@@ -1,11 +1,11 @@
-package org.adamball.introduction;
+package org.adaball.introduction;
 
 import java.io.InputStream;
 import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.Scanner;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-currency-formatter/problem">HR link</a>

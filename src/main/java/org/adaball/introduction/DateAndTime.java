@@ -1,4 +1,4 @@
-package org.adamball.introduction;
+package org.adaball.introduction;
 
 import java.io.InputStream;
 import java.util.Calendar;
@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.Scanner;
 import java.util.TimeZone;
-import org.adamball.Util;
+import org.adaball.Util;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/java-date-and-time/problem?isFullScreen=true">HR link</a>

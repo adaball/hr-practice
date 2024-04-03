@@ -1,4 +1,4 @@
-package org.adamball.introduction;
+package org.adaball.introduction;
 
 /**
  * Solution for: <a href="https://www.hackerrank.com/challenges/welcome-to-java/problem">HR link</a>

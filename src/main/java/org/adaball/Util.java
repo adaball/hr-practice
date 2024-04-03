@@ -1,4 +1,4 @@
-package org.adamball;
+package org.adaball;
 
 import java.io.InputStream;
 import java.util.MissingResourceException;
