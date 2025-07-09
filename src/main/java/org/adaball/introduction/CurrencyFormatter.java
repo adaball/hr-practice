@@ -25,12 +25,12 @@ public class CurrencyFormatter {
     scanner.close();
 
     NumberFormat usdFormat = NumberFormat.getCurrencyInstance(Locale.US);
-    NumberFormat inrFormat = NumberFormat.getCurrencyInstance(Locale.of("en", "IN"));
+//    NumberFormat inrFormat = NumberFormat.getCurrencyInstance(Locale.of("en", "IN"));
     NumberFormat cnyFormat = NumberFormat.getCurrencyInstance(Locale.CHINA);
     NumberFormat eurFormat = NumberFormat.getCurrencyInstance(Locale.FRANCE);
 
     System.out.printf("US: %s%n", usdFormat.format(payment));
-    System.out.printf("India: %s%n", inrFormat.format(payment));
+//    System.out.printf("India: %s%n", inrFormat.format(payment));
     System.out.printf("China: %s%n", cnyFormat.format(payment));
     System.out.printf("France: %s%n", eurFormat.format(payment));
   }
