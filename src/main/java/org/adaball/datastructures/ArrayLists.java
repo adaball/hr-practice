@@ -3,11 +3,12 @@ package org.adaball.datastructures;
 import org.adaball.Util;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.MissingResourceException;
 import java.util.Scanner;
 
-public class ArrayList {
+public class ArrayLists {
     public static void main(String[] args) {
         InputStream inputStream;
 
@@ -19,10 +20,10 @@ public class ArrayList {
 
         Scanner scanner = new Scanner(inputStream);
         int numberOfLines = scanner.nextInt();
-        List<List<Integer>> lines = new java.util.ArrayList<>(numberOfLines);
+        List<List<Integer>> lines = new ArrayList<>(numberOfLines);
         for (int i = 0; i < numberOfLines; i++) {
             int numberOfInts = scanner.nextInt();
-            List<Integer> line = new java.util.ArrayList<>(numberOfInts);
+            List<Integer> line = new ArrayList<>(numberOfInts);
             lines.add(line);
             for (int i1 = 0; i1 < numberOfInts; i1++) {
                 line.add(scanner.nextInt());
