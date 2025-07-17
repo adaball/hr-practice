@@ -39,8 +39,7 @@ public class CheckResult {
         if (failures.isEmpty()) {
             System.out.println("results match!");
         } else {
-            String failuresString = String.join(", ",
-                    failures.stream().map(i -> String.valueOf(i + 1)).collect(Collectors.toUnmodifiableList()));
+            String failuresString = failures.stream().map(i -> String.valueOf(i + 1)).collect(Collectors.joining(", "));
             System.out.printf("result do not match, failure lines: %s", failuresString);
         }
     }

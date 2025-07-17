@@ -11,20 +11,6 @@ import java.util.Set;
 public class HashSets {
     public static void main(String[] args) {
         InputStream inputStream;
-        /**
-         * 5
-         * john tom
-         * john mary
-         * john tom
-         * mary anna
-         * mary anna
-         *
-         * (john, tom) -> 1 -> ((john, tom))
-         * (john, mary) -> 2 -> ((john, tom), (john, mary))
-         * (john, tom) -> 2 -> ((john, tom), (john, mary))
-         * (mary, anna) -> 3 -> ((john, tom), (john, mary), (mary, anna))
-         * (mary, anna) -> 3 -> ((john, tom), (john, mary), (mary, anna))
-         */
 
         try {
             inputStream = Util.loadResourceAsStream("datastructures/hashsets.txt");
